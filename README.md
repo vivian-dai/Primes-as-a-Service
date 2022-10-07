@@ -1,5 +1,5 @@
 # Primes as a Service
-*insert cover image*  
+![cover image](./readme_assets/cover-image.png)  
 *insert demo link*
 
 ## About
