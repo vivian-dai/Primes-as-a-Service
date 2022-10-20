@@ -9,7 +9,7 @@ const Hero = () => {
       <path opacity="0.9" d="M1107.59 1024L1107.59 -6.10351e-05L456.176 -6.10351e-05L1759 -6.10351e-05L1107.59 1024Z" fill="#181168"/>
     </svg>
     <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
-      <h1 className="grand-title text-2xl-regular max-w-lg">Insert Engaging Title Here</h1>
+      <h1 className="grand-title text-2xl-regular max-w-xl">Imagine Doing Math: Prime Integration</h1>
       <Image
       src="/logo.png"
       width="220px"
