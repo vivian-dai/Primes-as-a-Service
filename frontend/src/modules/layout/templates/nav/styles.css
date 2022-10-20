@@ -1,0 +1,9 @@
+.slogan {
+    display: inline;
+    padding-right: 2%; 
+}
+
+#logo-slogan {
+    position: absolute;
+    left: 0;
+}
