@@ -70,9 +70,11 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
+          <div id="logo-slogan" className="small:p-32">
             <Link href="/">
-              <a className="text-xl-semi uppercase"><img style={{display: "inline", paddingRight: "2%"}} src="/logo.png" width="10%"/>Primes as a Service</a>
+              <a className="text-xl-semi uppercase">
+                <img className="slogan" src="/logo.png" width="10%"/>
+                Primes as a Service</a>
             </Link>
           </div>
 

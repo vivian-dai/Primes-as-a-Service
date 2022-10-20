@@ -33,7 +33,7 @@ const DropdownMenu = () => {
               <a className="relative flex h-full">
                 <Popover.Button
                   className={clsx(
-                    "relative h-full flex items-center transition-all ease-out duration-200"
+                    "relative h-full flex items-center transition-all ease-out duration-200 emphasis"
                   )}
                   onClick={() => push("/store")}
                 >
@@ -59,7 +59,7 @@ const DropdownMenu = () => {
                 <div className="relative bg-white py-8">
                   <div className="flex items-start content-container">
                     <div className="flex flex-col flex-1 max-w-[30%]">
-                      <h3 className="text-base-semi text-gray-900 mb-4">
+                      <h3 className="text-base-semi text-gray-900 mb-4 emphasis">
                         Collections
                       </h3>
                       <div className="flex items-start">
