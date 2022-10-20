@@ -73,8 +73,9 @@ const Nav = () => {
           <div id="logo-slogan" className="small:p-32">
             <Link href="/">
               <a className="text-xl-semi uppercase">
-                <img className="slogan" src="/logo.png" width="10%"/>
-                Primes as a Service</a>
+                <img className="slogan" src="/logo.png" width="10%" />
+                Primes as a Service
+              </a>
             </Link>
           </div>
 
