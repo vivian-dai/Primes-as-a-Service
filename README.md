@@ -39,3 +39,4 @@ Open yet another instance of your command line to run the admin:
 * [Medusa Next.js Storefront](https://docs.medusajs.com/starters/nextjs-medusa-starter)
 * [Medusa Admin](https://docs.medusajs.com/admin/quickstart/)
 * [Medusa Minio](https://docs.medusajs.com/add-plugins/minio/)
+* [Medusa Stripe](https://docs.medusajs.com/add-plugins/stripe/)
