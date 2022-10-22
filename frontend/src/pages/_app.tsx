@@ -7,9 +7,9 @@ import { CartProvider, MedusaProvider } from "medusa-react"
 import { Hydrate } from "react-query"
 import "styles/globals.css"
 import { AppPropsWithLayout } from "types/global"
-import '../modules/home/components/hero/styles.css'
-import '../modules/layout/templates/nav/styles.css'
-import '../modules/layout/components/dropdown-menu/styles.css'
+import "../modules/home/components/hero/styles.css"
+import "../modules/layout/templates/nav/styles.css"
+import "../modules/layout/components/dropdown-menu/styles.css"
 
 function App({
   Component,

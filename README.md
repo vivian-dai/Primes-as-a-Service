@@ -13,7 +13,7 @@
 ### Description
 We sell primes.
 ### Preview
-<!--replace this later with a preview image-->
+![Home page](./readme_assets/prototype-primes.png)
 
 ## Setup
 ### Prerequisites

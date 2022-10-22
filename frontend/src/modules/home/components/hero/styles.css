@@ -1,41 +1,43 @@
 :root {
-    font-family: monospace, sans-serif;
+  font-family: monospace, sans-serif;
 }
 
 #container {
-    height: 100vh;
-    background: linear-gradient(rgba(59, 130, 246, 0.50), rgba(61, 80, 97, 0.6)) fixed, url('/math.gif') no-repeat fixed center/cover;
+  height: 100vh;
+  background: linear-gradient(rgba(59, 130, 246, 0.5), rgba(61, 80, 97, 0.6))
+      fixed,
+    url("/math.gif") no-repeat fixed center/cover;
 }
 
 .background-navy {
-    position: absolute;
-    left: -30%;
-    height: 100vh;
-    z-index: 2;
-    width: auto;
+  position: absolute;
+  left: -30%;
+  height: 100vh;
+  z-index: 2;
+  width: auto;
 }
 
 .logo {
-    transition: 500ms;
+  transition: 500ms;
 }
 
 .logo:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .grand-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 70px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 70px;
 }
 
 #more-nums {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
