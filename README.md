@@ -23,7 +23,7 @@ We sell primes.
 Run `npm install` in the root folder, the `frontend` folder, and the `admin` folder  
 
 Set up a Minio bucket, make it public and add `MINIO_ENDPOINT`, `MINIO_BUCKET`, `MINIO_ACCESS_KEY`, and `MINIO_SECRET_KEY` environment variables in the `.env` file. Check `.env.template` for what environment variables exist. `MINIO_ENDPOINT` is already configured in the `env.template`. Keep that. Refer to [Medusa.js's guide on setting up MinIO for more](https://docs.medusajs.com/add-plugins/minio/)  
-Create a [Stripe](https://stripe.com) account and add your stripe API key as `STRIPE_API_KEY` in the `.env` file and your public key as `NEXT_PUBLIC_STRIPE_KEY` in the `.env` file
+Create a [Stripe](https://stripe.com) account and add your stripe API key as `STRIPE_API_KEY` in the `.env` file in root and your public key as `NEXT_PUBLIC_STRIPE_KEY` in the `.env` file in the [`frontend`](./frontend/) folder
 ### Running
 Start MinIO:  
 1. `./minio.exe server ./ --address 127.0.0.1:9001  --console-address :9090`  
