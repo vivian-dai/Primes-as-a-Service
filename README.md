@@ -1,5 +1,6 @@
 # Primes as a Service
-![cover image](./frontend/public/hero.png)  
+Built with 
+![cover image](./readme_assets/cover-image.png)  
 *insert demo link*
 
 ## About
@@ -19,6 +20,7 @@ We sell primes.
 ### Prerequisites
 * [Node.js v14 or v16](https://nodejs.org)
 * [MinIO v8](https://min.io/)
+* [Medusajs v15](https://medusajs.com/)
 ### Installation
 Run `npm install` in the root folder, the `frontend` folder, and the `admin` folder  
 
