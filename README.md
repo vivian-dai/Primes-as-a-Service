@@ -29,7 +29,7 @@ Create a [Stripe](https://stripe.com) account and add your stripe API key as `ST
 ### Running
 Start MinIO:  
 1. `./minio.exe server ./ --address 127.0.0.1:9001  --console-address :9090`  
-Start Medusa:
+Start Medusa in a new command line window:
 2. `medusa develop`  
 Open another instance of your command line to run frontend:
 3. `cd frontend`
