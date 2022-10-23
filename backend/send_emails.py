@@ -7,7 +7,7 @@ import ssl
 load_dotenv()
 
 sender = 'primesasaservice@gmail.com'
-password = 'qywumbvmssinpnhr'
+password = os.environ('password')
 # Get these from server
 reciever = 'mmmzzz66g@gmail.com'
 start = 181
