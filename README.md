@@ -12,7 +12,9 @@ Built with
 * [Vivian](https://github.com/vivian-dai)
 
 ### Description
-We sell primes.
+
+Primes as a service is a medusa store for selling prime numbers for cryptography and RSA encryption. 
+
 ### Preview
 
 <details>
@@ -49,6 +51,15 @@ Open another instance of your command line to run frontend:
 Open yet another instance of your command line to run the admin:
 5. `cd admin`
 6. `npm start`
+
+### Backedn
+
+The backend of our app (prime generation) is a FastAPI endpoint hosted on Deta. 
+You can test it out here: https://lpdet4.deta.dev/gentestprime
+The docuentation is here: https://lpdet4.deta.dev/docs
+An API key is required for production prime generation. 
+
+An Azure VM hosts an email script to automate the prime checkout process. 
 
 ## Resources
 * [Medusa's Github repository](https://github.com/medusajs/medusa)
