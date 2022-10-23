@@ -14,7 +14,19 @@ Built with
 ### Description
 We sell primes.
 ### Preview
+
+<details>
+<summary>Expand to see screenshots</summary>
+
 ![Home page](./readme_assets/prototype-primes.png)
+![order](./readme_assets/order.png)
+![products admin](./readme_assets/products.png)
+![products client](./readme_assets/products-client.png)
+![profile](./readme_assets/profile.png)
+![purchase](./readme_assets/purchase.png)
+![shipping](./readme_assets/shipping.png)
+![emailed prime](./readme_assets/email.png)
+</details>
 
 ## Setup
 ### Prerequisites
