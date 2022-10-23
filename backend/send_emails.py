@@ -14,7 +14,7 @@ start = 181
 end = 190
 
 api_key = os.environ('api_key')
-prime = requests.get(f"https://lpdet4.deta.dev/genprimebtwn?a={start}&b={end}&apikey={api_key}")
+prime = requests.get(f"https://lpdet4.deta.dev/genprimebtwn?a={start}&b={end}&apikey={api_key}").json()["prime"]
 
 body_msg = f'''Subject: Your Prime
 Thank you for purchasing your prime with Primes As A Service. 
