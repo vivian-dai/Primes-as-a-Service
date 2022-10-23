@@ -1,7 +1,6 @@
 # Primes as a Service
-Built with 
+
 ![cover image](./readme_assets/cover-image.png)  
-*insert demo link*
 
 ## About
 ### Participants
@@ -12,7 +11,15 @@ Built with
 * [Vivian](https://github.com/vivian-dai)
 
 ### Description
-We sell primes.
+
+Primes as a service is a medusa store and e-commerce web application for selling prime numbers for cryptography and RSA encryption. 
+
+### Features
+- Multiple types of primes offered
+- Custom purchase and stripe checkout page
+- Automated encrypted emails with your prime information
+- 24/7 support and more! 
+
 ### Preview
 
 <details>
@@ -31,13 +38,17 @@ We sell primes.
 ## Setup
 ### Prerequisites
 * [Node.js v14 or v16](https://nodejs.org)
+* [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
 * [MinIO v8](https://min.io/)
 * [Medusajs v15](https://medusajs.com/)
+
 ### Installation
 Run `npm install` in the root folder, the `frontend` folder, and the `admin` folder  
 
-Set up a Minio bucket, make it public and add `MINIO_ENDPOINT`, `MINIO_BUCKET`, `MINIO_ACCESS_KEY`, and `MINIO_SECRET_KEY` environment variables in the `.env` file. Check `.env.template` for what environment variables exist. `MINIO_ENDPOINT` is already configured in the `env.template`. Keep that. Refer to [Medusa.js's guide on setting up MinIO for more](https://docs.medusajs.com/add-plugins/minio/)  
-Create a [Stripe](https://stripe.com) account and add your stripe API key as `STRIPE_API_KEY` in the `.env` file in root and your public key as `NEXT_PUBLIC_STRIPE_KEY` in the `.env` file in the [`frontend`](./frontend/) folder
+Set up a Minio bucket, make it public and add `MINIO_ENDPOINT`, `MINIO_BUCKET`, `MINIO_ACCESS_KEY`, and `MINIO_SECRET_KEY` environment variables in the `.env` file. Check `.env.template` for what environment variables exist. `MINIO_ENDPOINT` is already configured in the `env.template`. Keep that. Refer to [Medusa.js's guide on setting up MinIO](https://docs.medusajs.com/add-plugins/minio/) for more information. 
+
+Create a [Stripe](https://stripe.com) account and add your stripe API key as `STRIPE_API_KEY` in the `.env` file in root and your public key as `NEXT_PUBLIC_STRIPE_KEY` in the `.env` file in the [`frontend`](./frontend/) folder. This will be used for the Medusa checkout feature. 
+
 ### Running
 Start MinIO:  
 1. `./minio.exe server ./ --address 127.0.0.1:9001  --console-address :9090`  
@@ -49,6 +60,21 @@ Open another instance of your command line to run frontend:
 Open yet another instance of your command line to run the admin:
 5. `cd admin`
 6. `npm start`
+
+Your frontend should be running at http://localhost:8000/! 
+Your medusa API is running at port 9000, and the admin portal is running at port 7000. 
+
+### Backend
+
+The backend of our app (prime generation) is a FastAPI endpoint hosted on [Deta](https://www.deta.sh/). 
+
+You can test it out here: https://lpdet4.deta.dev/gentestprime <br>
+The documentation for the API endpoint is here: https://lpdet4.deta.dev/docs <br>
+Note: An API key is required for production prime generation. 
+
+To self host the FastAPI endpoint, run `uvicorn main:app --reload`, and see your app running at http://127.0.0.1:8000. 
+
+An Azure VM hosts an email script to automate the prime checkout process. 
 
 ## Resources
 * [Medusa's Github repository](https://github.com/medusajs/medusa)
