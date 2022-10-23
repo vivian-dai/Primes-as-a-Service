@@ -50,19 +50,22 @@ Set up a Minio bucket, make it public and add `MINIO_ENDPOINT`, `MINIO_BUCKET`, 
 Create a [Stripe](https://stripe.com) account and add your stripe API key as `STRIPE_API_KEY` in the `.env` file in root and your public key as `NEXT_PUBLIC_STRIPE_KEY` in the `.env` file in the [`frontend`](./frontend/) folder. This will be used for the Medusa checkout feature. 
 
 ### Running
-Start MinIO:  
-1. `./minio.exe server ./ --address 127.0.0.1:9001  --console-address :9090`  
-Start Medusa in a new command line window:
-2. `medusa develop`  
-Open another instance of your command line to run frontend:
-3. `cd frontend`
-4. `yarn dev`  
-Open yet another instance of your command line to run the admin:
-5. `cd admin`
-6. `npm start`
+1. Start MinIO: `./minio.exe server ./ --address 127.0.0.1:9001  --console-address :9090`  
+2. Start Medusa in a new command line window: `medusa develop`  
+3. Open another instance of your command line and navigate to frontend: `cd frontend`
+4. Then to run frontend: `yarn dev`  
+5. Open yet another instance of your command line and go to admin: `cd admin`
+6. To run the admin: `npm start`
 
 Your frontend should be running at http://localhost:8000/! 
-Your medusa API is running at port 9000, and the admin portal is running at port 7000. 
+Your medusa API is running at port [9000](http://localhost:9000/store/products), and the admin portal is running at port [7000](http://localhost:7000/). 
+
+#### Existing Accounts
+|Type|Username (Email)|Password|Where|
+|-|-|-|-|
+|User|`test@test.test`|`test`|[Frontend](http://localhost:8000/)|
+|Admin|`admin@medusa-test.com`|`supersecret`|[Admin panel](http://localhost:7000/)|
+|Minio|`minioadmin`|`minioadmin`|[Minio console](http://127.0.0.1:9090  )|
 
 ### Backend
 
