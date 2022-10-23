@@ -1,0 +1,16 @@
+#country {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#flag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  background-color: #181168;
+  color: white;
+}

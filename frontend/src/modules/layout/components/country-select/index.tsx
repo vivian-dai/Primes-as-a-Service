@@ -42,7 +42,7 @@ const CountrySelect = () => {
   }
 
   return (
-    <div onMouseEnter={open} onMouseLeave={close}>
+    <div className="body" onMouseEnter={open} onMouseLeave={close}>
       <Listbox
         onChange={handleChange}
         value={
@@ -52,10 +52,10 @@ const CountrySelect = () => {
         }
       >
         <Listbox.Button className="py-1 w-full">
-          <div className="text-small-regular flex items-center gap-x-2 xsmall:justify-end">
+          <div id="country" className="text-small-regular">
             <span>Shipping to:</span>
             {current && (
-              <span className="text-small-semi flex items-center gap-x-2">
+              <span id="flag" className="text-small-semi">
                 <ReactCountryFlag
                   svg
                   style={{

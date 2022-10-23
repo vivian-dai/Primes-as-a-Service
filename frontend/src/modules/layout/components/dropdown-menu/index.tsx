@@ -58,42 +58,37 @@ const DropdownMenu = () => {
               >
                 <div className="relative bg-white py-8">
                   <div className="flex items-start content-container">
-                    <div className="flex flex-col flex-1 max-w-[30%]">
-                      <h3 className="text-base-semi text-gray-900 mb-4 emphasis">
-                        Collections
-                      </h3>
-                      <div className="flex items-start">
-                        {collections &&
-                          chunk(collections, 6).map((chunk, index) => {
-                            return (
-                              <ul
-                                key={index}
-                                className="min-w-[152px] max-w-[200px] pr-4"
-                              >
-                                {chunk.map((collection) => {
-                                  return (
-                                    <div key={collection.id} className="pb-3">
-                                      <Link
-                                        href={`/collections/${collection.id}`}
-                                      >
-                                        <a onClick={() => setOpen(false)}>
-                                          {collection.title}
-                                        </a>
-                                      </Link>
-                                    </div>
-                                  )
-                                })}
-                              </ul>
-                            )
-                          })}
-                        {loadingCollections &&
-                          repeat(6).map((index) => (
-                            <div
+                    <div className="flex items-start">
+                      {collections &&
+                        chunk(collections, 6).map((chunk, index) => {
+                          return (
+                            <ul
                               key={index}
-                              className="w-12 h-4 bg-gray-100 animate-pulse"
-                            />
-                          ))}
-                      </div>
+                              className="min-w-[152px] max-w-[200px] pr-4"
+                            >
+                              {chunk.map((collection) => {
+                                return (
+                                  <div key={collection.id} className="pb-3">
+                                    <Link
+                                      href={`/collections/${collection.id}`}
+                                    >
+                                      <a onClick={() => setOpen(false)}>
+                                        {collection.title}
+                                      </a>
+                                    </Link>
+                                  </div>
+                                )
+                              })}
+                            </ul>
+                          )
+                        })}
+                      {loadingCollections &&
+                        repeat(6).map((index) => (
+                          <div
+                            key={index}
+                            className="w-12 h-4 bg-gray-100 animate-pulse"
+                          />
+                        ))}
                     </div>
                     <div className="flex-1">
                       <div className="grid grid-cols-3 gap-4">

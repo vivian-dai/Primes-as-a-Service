@@ -10,6 +10,9 @@ import { AppPropsWithLayout } from "types/global"
 import "../modules/home/components/hero/styles.css"
 import "../modules/layout/templates/nav/styles.css"
 import "../modules/layout/components/dropdown-menu/styles.css"
+import "../modules/layout/components/footer-cta/styles.css"
+import "../modules/layout/components/footer-nav/styles.css"
+import "../modules/layout/components/country-select/styles.css"
 
 function App({
   Component,
