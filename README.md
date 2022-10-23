@@ -66,10 +66,11 @@ Your medusa API is running at port 9000, and the admin portal is running at port
 
 ### Backend
 
-The backend of our app (prime generation) is a FastAPI endpoint hosted on Deta. 
-You can test it out here: https://lpdet4.deta.dev/gentestprime
-The docuentation is here: https://lpdet4.deta.dev/docs
-An API key is required for production prime generation. 
+The backend of our app (prime generation) is a FastAPI endpoint hosted on [Deta](https://www.deta.sh/). 
+
+You can test it out here: https://lpdet4.deta.dev/gentestprime <br>
+The documentation for the API endpoint is here: https://lpdet4.deta.dev/docs <br>
+Note: An API key is required for production prime generation. 
 
 To self host the FastAPI endpoint, run `uvicorn main:app --reload`, and see your app running at http://127.0.0.1:8000. 
 
