@@ -12,7 +12,7 @@
 
 ### Description
 
-Primes as a service is a medusa store for selling prime numbers for cryptography and RSA encryption. 
+Primes as a service is a medusa store and e-commerce web application for selling prime numbers for cryptography and RSA encryption. 
 
 ### Features
 - Multiple types of primes offered
